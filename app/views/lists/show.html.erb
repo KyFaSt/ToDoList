@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @list.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @list.description %>
+</p>
+
+<p>
+  <strong>Completiondate:</strong>
+  <%= @list.completiondate %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @list.completed %>
+</p>
+
+<h3>Tasks</h3>
+<% @list.tasks.each do |task| %>
+  <div>
+    <strong><%= task.name %></strong>
+    <br />
+    <p><%= task.description %></p>
+  </div>
+<% end %>
+<%= render 'tasks/form' %>
+
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', lists_path %>

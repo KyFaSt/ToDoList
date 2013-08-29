@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  completiondate: 2013-08-28
+  completed: 1.5
+
+two:
+  name: MyString
+  description: MyText
+  completiondate: 2013-08-28
+  completed: 1.5
